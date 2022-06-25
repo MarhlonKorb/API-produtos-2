@@ -1,4 +1,8 @@
 package com.api.produtos.service;
 
-public class ProdutoService {
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProdutoService  {
+
 }

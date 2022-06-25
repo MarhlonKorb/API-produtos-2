@@ -1,15 +1,24 @@
-package com.api.produtos.model;
+package com.api.produtos.model.entities;
 
+import jakarta.persistence.Id;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.text.DateFormat;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import java.util.Objects;
-import java.util.StringJoiner;
 
+@RequestMapping(path = "/produtos")
 public class Produto {
 
-    long id;
-    String nome;
-    double preco;
+    @Id
+    private long id;
+
+    @NotBlank
+    private String nome;
+    @Min(0)
+    @Max(1)
+    private double preco;
 
     public Produto(Long id, String nome, double preco) {
         super();
@@ -22,8 +31,8 @@ public class Produto {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(long id) {
+        this.id =  id;
     }
 
     public String getNome() {
@@ -54,4 +63,5 @@ public class Produto {
     public int hashCode() {
         return Objects.hash(id, nome, preco);
     }
+
 }
