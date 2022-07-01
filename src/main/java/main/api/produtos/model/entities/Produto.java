@@ -3,6 +3,7 @@ package main.api.produtos.model.entities;
 
 import jakarta.persistence.Id;
 
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.constraints.Max;
@@ -23,7 +24,7 @@ public class Produto {
     @Max(1)
     private double preco;
 
-    public Produto(Long id, String nome, double preco) {
+    public Produto(@RequestBody Long id, String nome, double preco) {
         super();
         this.id = id;
         this.nome = nome;
