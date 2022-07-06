@@ -57,13 +57,14 @@ public class ProdutoRepository {
     /**
      * @param produto produto a ser atualizado.
      */
-    public void atualizarProduto (Produto produto){
+    public Produto atualizarProduto (Produto produto){
         Optional<Produto> produtoEncontrado = getProdutoById(produto.getId());
         if (produtoEncontrado.isEmpty()){
             throw new InputMismatchException("Produto não encontrado");
         }
         deleteProdutoById(produto.getId());
         addProduto(produto);
+        return produto;
     }
 
   public int countQuantidadeProdutos ( List<Produto> produtos){

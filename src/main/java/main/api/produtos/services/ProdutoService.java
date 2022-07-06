@@ -13,10 +13,10 @@ public class ProdutoService  {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-
     public Produto addProduto(Produto produto) {
         return produtoRepository.addProduto(produto);
     }
+
     public List<Produto> getListProdutos(){
         /*Regra de negócios*/
         return produtoRepository.getListProdutos();
@@ -34,8 +34,10 @@ public class ProdutoService  {
         return produtoRepository.getListByName(nome);
     }
 
-    public void atualizarProduto (Produto produto){
-        produtoRepository.atualizarProduto(produto);
+    public Produto atualizarProduto (long id, Produto produto){
+        produto.setId(id);
+
+        return produtoRepository.atualizarProduto(produto);
     }
 
     public int countQuantidadeProdutos (List<Produto> produtos){

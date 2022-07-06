@@ -1,16 +1,12 @@
 package main.api.produtos.model.entities;
 
-
 import jakarta.persistence.Id;
-
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import java.util.Objects;
-
 
 @RequestMapping(path = "/produtos")
 public class Produto {

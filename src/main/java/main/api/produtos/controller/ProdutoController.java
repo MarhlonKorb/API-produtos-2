@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/produtos")
@@ -19,9 +20,13 @@ public class ProdutoController {
         return produtoService.getListProdutos();
     }
 
+    @GetMapping("/{id}")
+    public Optional<Produto> getProdutoById(@PathVariable long id) {
+        return produtoService.getProdutoById(id);
+    }
+
     @PostMapping
     public Produto adicionar(@RequestBody Produto produto){
-        produtoService.addProduto(produto);
-        return produto;
+       return produtoService.addProduto(produto);
     }
 }
