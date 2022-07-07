@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20d4c95a-4949-4c08-82af-f9978393411d" name="Changes" comment="five commit&#10;&#10;Mapeando metodos na controller.">
+    <list default="true" id="20d4c95a-4949-4c08-82af-f9978393411d" name="Changes" comment="Six commit&#10;&#10;Api finalizada, sem conexão com banco de dados, apenas conceitual para reforçar a prática da arquitetura MVC utilizando DI/IoC .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/model/entities/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/model/entities/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/repositories/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/repositories/ProdutoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/services/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/services/ProdutoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.haulmont.jpb.dbDrivers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/marhl/Documents/Estudos_CursoJavaLeitao/API-produtos-2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.haulmont.jpb.dbDrivers"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="api-produtos-2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="main.ApiProdutos" />
@@ -79,6 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656038442555</updated>
+      <workItem from="1657221682258" duration="3116000" />
     </task>
     <task id="LOCAL-00001" summary="First commit&#10;&#10;Criação da classe Produto, divisão dos pacotes(model, repository, service) e criação da classe abstrata ProdutoRepository.&#10;Criação da classe ProdutoService sem campos por enquanto">
       <created>1656041570004</created>
@@ -115,8 +116,18 @@
       <option name="project" value="LOCAL" />
       <updated>1657106250134</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Six commit&#10;&#10;Api finalizada, sem conexão com banco de dados, apenas conceitual para reforçar a prática da arquitetura MVC utilizando DI/IoC .">
+      <created>1657164697519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657164697519</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -135,6 +146,7 @@
     <MESSAGE value="Third commit&#10;&#10;Ajuste dos metodos para entender a comunicação entre as camadas. Hoje ajustei os metodos de ProdutoRepository, adicionei os métodos a ProdutoService para que essa entidade fique responsavel pela implementação de ProdutoRepository e na controler é onde formam mapeadas as rotas para realizar as requisições via Postman. Ainda estou com problema para adicionar produtos via metodo Post." />
     <MESSAGE value="fourth commit&#10;&#10;Mapeando problema de rota http." />
     <MESSAGE value="five commit&#10;&#10;Mapeando metodos na controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="five commit&#10;&#10;Mapeando metodos na controller." />
+    <MESSAGE value="Six commit&#10;&#10;Api finalizada, sem conexão com banco de dados, apenas conceitual para reforçar a prática da arquitetura MVC utilizando DI/IoC ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Six commit&#10;&#10;Api finalizada, sem conexão com banco de dados, apenas conceitual para reforçar a prática da arquitetura MVC utilizando DI/IoC ." />
   </component>
 </project>

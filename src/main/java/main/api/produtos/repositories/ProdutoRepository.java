@@ -1,6 +1,7 @@
 package main.api.produtos.repositories;
 
 import main.api.produtos.model.entities.Produto;
+import main.api.produtos.model.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -60,7 +61,7 @@ public class ProdutoRepository {
     public Produto atualizarProduto (Produto produto){
         Optional<Produto> produtoEncontrado = getProdutoById(produto.getId());
         if (produtoEncontrado.isEmpty()){
-            throw new InputMismatchException("Produto não encontrado");
+            throw new ResourceNotFoundException("Produto não encontrado");
         }
         deleteProdutoById(produto.getId());
         addProduto(produto);
