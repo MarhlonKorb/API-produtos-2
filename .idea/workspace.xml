@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20d4c95a-4949-4c08-82af-f9978393411d" name="Changes" comment="fourth commit&#10;&#10;Mapeando problema de rota http.">
+    <list default="true" id="20d4c95a-4949-4c08-82af-f9978393411d" name="Changes" comment="five commit&#10;&#10;Mapeando metodos na controller.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/api/produtos/model/entities/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/api/produtos/model/entities/Produto.java" afterDir="false" />
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656672733123</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="five commit&#10;&#10;Mapeando metodos na controller.">
+      <created>1657106250134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657106250134</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +134,7 @@
     <MESSAGE value="Second commit&#10;&#10;Configuração manual das dependências do projeto. Organização estrutural dos pacotes e configurações da classe Produto como inserção das annotations para classificar os atributos da classe." />
     <MESSAGE value="Third commit&#10;&#10;Ajuste dos metodos para entender a comunicação entre as camadas. Hoje ajustei os metodos de ProdutoRepository, adicionei os métodos a ProdutoService para que essa entidade fique responsavel pela implementação de ProdutoRepository e na controler é onde formam mapeadas as rotas para realizar as requisições via Postman. Ainda estou com problema para adicionar produtos via metodo Post." />
     <MESSAGE value="fourth commit&#10;&#10;Mapeando problema de rota http." />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth commit&#10;&#10;Mapeando problema de rota http." />
+    <MESSAGE value="five commit&#10;&#10;Mapeando metodos na controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="five commit&#10;&#10;Mapeando metodos na controller." />
   </component>
 </project>

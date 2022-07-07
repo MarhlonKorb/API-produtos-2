@@ -35,10 +35,10 @@ public class ProdutoRepository {
      * @param id do produto que será localizado
      * @return Retorna produto pelo seu id caso seja encontrado
      */
-    public Optional<Produto> getProdutoById(long id) {
+    public Optional<Produto> getProdutoById(int id) {
         return produtos
                 .stream()
-                .filter(produto -> produto.getId().equals(id))
+                .filter(produto -> produto.getId() == id)
                 .findFirst();
     }
 
@@ -46,12 +46,12 @@ public class ProdutoRepository {
      * @param id id do produto a ser deletado.
      * @return void
      */
-    public void deleteProdutoById ( long id){
-        produtos.removeIf(produto -> produto.getId().equals(id));
+    public void deleteProdutoById (int id){
+        produtos.removeIf(produto -> produto.getId() == id);
     }
 
     public List<Produto> getListByName(String nome) {
-        return (List<Produto>) produtos.stream().filter(produto -> produto.getNome().equals(nome));
+        return (List<Produto>) produtos.stream().filter(produto -> produto.getNome() == nome);
     }
 
     /**

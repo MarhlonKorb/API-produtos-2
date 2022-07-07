@@ -1,5 +1,7 @@
 package main.api.produtos.model.entities;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,26 +14,23 @@ import java.util.Objects;
 public class Produto {
 
     @Id
-    private long id;
-
-    @NotBlank
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String nome;
-    @Min(0)
-    @Max(1)
     private double preco;
 
-    public Produto(@RequestBody Long id, String nome, double preco) {
+    public Produto(@RequestBody int id, String nome, double preco) {
         super();
         this.id = id;
         this.nome = nome;
         this.preco = preco;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id =  id;
     }
 

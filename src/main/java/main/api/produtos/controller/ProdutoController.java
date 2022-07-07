@@ -21,12 +21,23 @@ public class ProdutoController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Produto> getProdutoById(@PathVariable long id) {
+    public Optional<Produto> getProdutoById(@PathVariable int id) {
         return produtoService.getProdutoById(id);
     }
 
     @PostMapping
-    public Produto adicionar(@RequestBody Produto produto){
+    public Produto adicionar(Produto produto){
        return produtoService.addProduto(produto);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deletar(@PathVariable int id) {
+        produtoService.deleteProdutoById(id);
+        return "O produto com o id " + id + " foi deletado com sucesso!" ;
+    }
+
+    @PutMapping("/{id}")
+    public Produto atualizar(@RequestBody Produto produto) {
+        return produtoService.atualizarProduto(produto.getId(), produto);
     }
 }

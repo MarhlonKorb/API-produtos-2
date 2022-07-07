@@ -22,11 +22,11 @@ public class ProdutoService  {
         return produtoRepository.getListProdutos();
     }
 
-    public Optional<Produto> getProdutoById(long id) {
+    public Optional<Produto> getProdutoById(int id) {
         return produtoRepository.getProdutoById(id);
     }
 
-    public void deleteProdutoById ( long id){
+    public void deleteProdutoById ( int id){
         produtoRepository.deleteProdutoById(id);
     }
 
@@ -34,7 +34,7 @@ public class ProdutoService  {
         return produtoRepository.getListByName(nome);
     }
 
-    public Produto atualizarProduto (long id, Produto produto){
+    public Produto atualizarProduto (int id, Produto produto){
         produto.setId(id);
 
         return produtoRepository.atualizarProduto(produto);
