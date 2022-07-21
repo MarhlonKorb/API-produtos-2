@@ -1,25 +1,21 @@
-package main.api.produtos.model.entities;
+package api.produtos.model.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import java.util.Objects;
 
 @Entity
-@RequestMapping(path = "/produtos")
 public class Produto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nome;
     private double preco;
 
-    public Produto(@RequestBody int id, String nome, double preco) {
+    public Produto(int id, String nome, double preco) {
         super();
         this.id = id;
         this.nome = nome;

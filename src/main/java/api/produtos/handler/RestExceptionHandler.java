@@ -1,7 +1,7 @@
-package main.api.produtos.handler;
+package api.produtos.handler;
 
-import main.api.produtos.model.error.ErrorMessage;
-import main.api.produtos.model.exception.ResourceNotFoundException;
+import api.produtos.model.error.ErrorMessage;
+import api.produtos.model.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

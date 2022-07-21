@@ -1,4 +1,4 @@
-package main.api.produtos.model.error;
+package api.produtos.model.error;
 
 public class ErrorMessage {
 

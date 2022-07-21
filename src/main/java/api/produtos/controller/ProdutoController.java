@@ -1,7 +1,7 @@
-package main.api.produtos.controller;
+package api.produtos.controller;
 
-import main.api.produtos.model.entities.Produto;
-import main.api.produtos.services.ProdutoService;
+import api.produtos.model.entities.Produto;
+import api.produtos.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

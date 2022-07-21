@@ -1,15 +1,15 @@
-package main.api.produtos.repositories;
+package api.produtos.repositories;
 
-import main.api.produtos.model.entities.Produto;
-import main.api.produtos.model.exception.ResourceNotFoundException;
+import api.produtos.model.entities.Produto;
+import api.produtos.model.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class ProdutoRepository {
+public class ProdutoRepository_old {
 
     private List<Produto> produtos = new ArrayList<Produto>();
     private int ultimoId = 0;
